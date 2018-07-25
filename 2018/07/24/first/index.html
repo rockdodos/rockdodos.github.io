@@ -6,16 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://rockdodos.github.io">
-  <title>first | Dodo的博客</title>
+  <title>hexo+github搭建个人博客 | Dodo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="first">
+  <meta name="description" content="hexo+github搭建个人博客1.准备工作 github账号 安装node.js 安装git for windows2.搭建github博客新建github名为.github.io的repo，username为你的github用户名配置ssh keyssh-keygen -t rsa -C “邮件地址”cd ~/. ssh将id_rsa.pub的内容贴到新建的ssh keys测试ssh -T">
+<meta name="keywords" content="hexo,github,gitment">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github搭建个人博客">
 <meta property="og:url" content="https://rockdodos.github.io/2018/07/24/first/index.html">
 <meta property="og:site_name" content="Dodo的博客">
+<meta property="og:description" content="hexo+github搭建个人博客1.准备工作 github账号 安装node.js 安装git for windows2.搭建github博客新建github名为.github.io的repo，username为你的github用户名配置ssh keyssh-keygen -t rsa -C “邮件地址”cd ~/. ssh将id_rsa.pub的内容贴到新建的ssh keys测试ssh -T">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-24T09:41:44.370Z">
+<meta property="og:image" content="https://rockdodos.github.io/2018/07/24/first/img/ssh.png">
+<meta property="og:updated_time" content="2018-07-25T03:37:09.615Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="first">
+<meta name="twitter:title" content="hexo+github搭建个人博客">
+<meta name="twitter:description" content="hexo+github搭建个人博客1.准备工作 github账号 安装node.js 安装git for windows2.搭建github博客新建github名为.github.io的repo，username为你的github用户名配置ssh keyssh-keygen -t rsa -C “邮件地址”cd ~/. ssh将id_rsa.pub的内容贴到新建的ssh keys测试ssh -T">
+<meta name="twitter:image" content="https://rockdodos.github.io/2018/07/24/first/img/ssh.png">
   
     <link rel="alternative" href="/atom.xml" title="Dodo的博客" type="application/atom+xml">
   
@@ -158,7 +164,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      first
+      hexo+github搭建个人博客
     </h1>
   
 
@@ -171,7 +177,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="hexo-github搭建个人博客"><a href="#hexo-github搭建个人博客" class="headerlink" title="hexo+github搭建个人博客"></a>hexo+github搭建个人博客</h1><h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><ul>
+<li>github账号</li>
+<li>安装node.js</li>
+<li>安装git for windows<h2 id="2-搭建github博客"><a href="#2-搭建github博客" class="headerlink" title="2.搭建github博客"></a>2.搭建github博客</h2>新建github名为<username>.github.io的repo，<strong>username为你的github用户名</strong><br>配置ssh key<br>ssh-keygen -t rsa -C “邮件地址”<br>cd ~/. ssh<br>将id_rsa.pub的内容贴到新建的ssh keys<br><img src="img/ssh.png"><br>测试ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access.<br>则表示成功<h2 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h2>打开git bash 输入npm install -g hexo<br>新建一个博客目录，在目录内右键打开git bash或者cd到该目录，初始化hexo init<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">|-- _config.yml</span><br><span class="line">|-- package.json</span><br><span class="line">|-- public</span><br><span class="line">|-- scaffolds</span><br><span class="line">|-- scripts</span><br><span class="line">|-- source</span><br><span class="line">    |-- _posts</span><br><span class="line">|-- themes</span><br><span class="line">|-- .deploy</span><br></pre></td></tr></table></figure>
+</username></li>
+</ul>
+<p>hexo g # 生成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></p>
+<p>访问<a href="http://localhost:4000/即可看到内容" target="_blank" rel="noopener">http://localhost:4000/即可看到内容</a></p>
+<h2 id="4-修改主题"><a href="#4-修改主题" class="headerlink" title="4.修改主题"></a>4.修改主题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure>
+<p>clone主题到themes目录<br>修改_config.yml中的theme: landscape改为theme: yilia，然后重新执行hexo g来重新生成。</p>
+<h2 id="5-部署到github"><a href="#5-部署到github" class="headerlink" title="5.部署到github"></a>5.部署到github</h2><p>首先安装npm install hexo-deployer-git –save，否则提交会报错。<br>修改_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>打开git bash，输入hexo d -g #生成并上传。成功后即可通过<a href="https://username.github.io/访问" target="_blank" rel="noopener">https://username.github.io/访问</a></p>
+
       
 
       
@@ -200,7 +218,37 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">gitment</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/学习笔记//" class="article-tag-list-link color5">学习笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -427,6 +475,18 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">gitment</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
